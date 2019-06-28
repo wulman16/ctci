@@ -11,8 +11,11 @@
  */
 const isPermutedPalindrome = str => {
   const charCounts = {};
-  for (let char of str) {
-    charCounts[char] = charCounts[char]++ || 1;
+  for (let char of str
+    .toLowerCase()
+    .split(` `)
+    .join(``)) {
+    charCounts[char] = charCounts[char] + 1 || 1;
   }
   let mismatch = false;
   for (let key in charCounts) {
@@ -23,3 +26,5 @@ const isPermutedPalindrome = str => {
   }
   return true;
 };
+
+module.exports = isPermutedPalindrome;
