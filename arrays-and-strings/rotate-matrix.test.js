@@ -7,7 +7,6 @@ test(`works in basic cases`, () => {
     [9, 6, 3]
   ]);
   expect(rotateMatrix([[1, 2], [4, 5]])).toStrictEqual([[4, 1], [5, 2]]);
-  expect(rotateMatrix([[1]])).toStrictEqual([[1]]);
 });
 
 test(`works on N=1 matrices`, () => {
