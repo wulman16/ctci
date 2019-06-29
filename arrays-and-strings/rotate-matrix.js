@@ -3,8 +3,8 @@
  *
  * Rotate an NxN matrix by 90 degrees
  *
- * Time complexity:
- * Space complexity:
+ * Time complexity: O(n^2)
+ * Space complexity: O(n^2)
  *
  * @param {Array<Array<number>>} matrix
  * @return {Array<Array<number>>}
