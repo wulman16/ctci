@@ -34,19 +34,12 @@ const oneReplacementAway = (str1, str2) => {
 const oneRemovalAway = (str1, str2) => {
   if (str1.length < str2.length) return false;
   let removal = false;
-  let i = 0;
   let j = 0;
-  while (i < str1.length) {
+  for (let i = 0; i < str1.length; i++) {
     if (str1[i] !== str2[j]) {
       if (removal) return false;
-      else {
-        removal = true;
-        i++;
-      }
-    } else {
-      i++;
-      j++;
-    }
+      else removal = true;
+    } else j++;
   }
   return true;
 };
